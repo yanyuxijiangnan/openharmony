@@ -1,0 +1,55 @@
+{
+  "app": {
+    "signingConfigs": [
+      {
+        "name": "default",
+        "material": {
+          "certpath": "C:/Users/zhuhaonan/.ohos/config/openharmony/default_calculator_ATukY3ylllBMeHmqvAJ9Wln4TjNCKL0F2e8Xt_kvt_A=.cer",
+          "storePassword": "0000001A5599A7469AF37683C4F464B58C178E9040B5C28EBCE88E23E7713B2338F508DD0B3848B735BE",
+          "keyAlias": "debugKey",
+          "keyPassword": "0000001A5EE75234D90716A09CAF0B80B333C56E2E833CAD97D7818A795C95A21E55C1B97AF5A1331047",
+          "profile": "C:/Users/zhuhaonan/.ohos/config/openharmony/default_calculator_ATukY3ylllBMeHmqvAJ9Wln4TjNCKL0F2e8Xt_kvt_A=.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "C:/Users/zhuhaonan/.ohos/config/openharmony/default_calculator_ATukY3ylllBMeHmqvAJ9Wln4TjNCKL0F2e8Xt_kvt_A=.p12"
+        }
+      }
+    ],
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+        "compileSdkVersion": 12,
+        "compatibleSdkVersion": 12,
+        "runtimeOS": "OpenHarmony",
+        "buildOption": {
+          "strictMode": {
+            "caseSensitiveCheck": true,
+            "useNormalizedOHMUrl": true
+          }
+        }
+      }
+    ],
+    "buildModeSet": [
+      {
+        "name": "debug",
+      },
+      {
+        "name": "release"
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    }
+  ]
+}
